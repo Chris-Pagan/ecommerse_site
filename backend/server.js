@@ -11,13 +11,13 @@ const PORT = process.env.PORT || 5000
 
 connectDB();
 
+
+app.use(express.json())
 app.get('/', (req, res) => {
     res.send('API is running...')
 })
-
 app.use('/api/products', productRoutes)
 app.use('/api/users', userRoutes)
-app.use(express.json())
 
 app.use(notFound)
 
