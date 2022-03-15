@@ -21,7 +21,8 @@ const { loading, error, products} = productList
 
   return (
     <>
-        <h1>Latest Products</h1>
+        <h1>Latest Products </h1>
+        <h3 style={{ color: 'red'}}>Please note nothing is actually for sale</h3>
         {loading ? <Loader />
         : error ? 
           <Message variant='danger'>{error}</Message>

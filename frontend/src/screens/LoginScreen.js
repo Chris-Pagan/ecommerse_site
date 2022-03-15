@@ -52,10 +52,11 @@ const LoginScreen = ({ location, history }) => {
               placeholder='Enter password'
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              
             ></Form.Control>
           </Form.Group>
   
-          <Button type='submit' variant='primary'>
+          <Button type='submit' variant='primary' className='my-2'>
             Sign In
           </Button>
         </Form>
